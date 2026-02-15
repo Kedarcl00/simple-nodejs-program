@@ -12,6 +12,7 @@ http.createServer(function(req, res) {
     let sum =add(num1, num2);
 
     res.writeHead(200, {'Content-Type': 'text/html'});
+    console.log(`Received request with num1: ${num1}, num2: ${num2}, sum: ${sum}`);
     res.end(`Sum is ${sum}`);
 
 }).listen(3000);
